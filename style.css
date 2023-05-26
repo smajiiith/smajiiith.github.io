@@ -1,0 +1,315 @@
+:root {
+    --primary: #343456;
+    --secondary: #B80000;
+    --tertiary: rgba(255, 234, 234, 0.52);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    margin: 0;
+}
+
+.IITHlogo {
+    height: 140px;
+    aspect-ratio: 1;
+    margin: 15px 50px;
+}
+
+.body-first {
+    display: flex;
+}
+.body-second{
+    font-size: 48px;
+    font-family: 'Inter';
+    font-weight: 700;
+    margin: auto 40px auto 0;
+}
+
+/* .body-second p{
+    background: linear-gradient(var(--primary), white);
+
+} */
+
+.body-cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headname {
+    margin-top: 55px;
+}
+
+.head1 {
+    margin-bottom: -10px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -1px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    color: var(--primary);
+}
+
+.head2 {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 46px;
+    color: var(--primary);
+}
+
+.body-top-hr {
+    width: 95%;
+    height: 0;
+    border: 1px solid var(--secondary);
+}
+
+/* NavBar */
+.nav-bar {
+    margin: 10px 55px;
+    display: flex;
+}
+
+.nav-bar-button {
+    margin: 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 12px 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+.button-selected {
+    background-color: var(--secondary);
+    color: white;
+
+}
+
+.button-unselected {
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    background-color: white;
+}
+
+.main-head2{
+    /* margin: 15px 0 0 75px; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 58px;
+    color: var(--primary);
+}
+
+.index-content{
+margin: 70px 0 0 0;
+}
+
+.main-head {
+    margin: 15px 0 0 75px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 58px;
+    color: var(--primary);
+}
+
+.main-root {
+    display: flex;
+}
+
+.main-sidebar {
+    position: fixed;
+    top: 23vh;
+    right: 0;
+    width: 23vw;
+    flex-basis: 23%;
+}
+
+.sidebar {
+    background: var(--tertiary);
+    border-radius: 13px;
+    padding: 15px;
+    margin: 20px;
+    font-family: 'Inter';
+    font-size: 20px;
+}
+
+.sidebar p,
+.sidebar h3 {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.main-marquee{
+    background-color: rgba(255, 255, 0, 0.397);
+    font-family: 'Inter';
+    font-size: 24px;
+}
+
+.main-body {
+    /* flex-basis: 70%; */
+    margin: 0px 0 0 105px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--primary);
+    min-height: calc(100vh - 300px);
+}
+
+.homewrap {
+    display: flex;
+    /* align-items: center; */
+    line-height: 40px;
+    font-size: 36px;
+}
+
+.homeimage {
+    width: 600px;
+    margin: 15px 0 0 0;
+}
+
+.main-body h3,
+.main-body img,
+.main-body p,
+.main-body ol {
+    padding: 0 0 0 15px;
+}
+
+.main-body h4{
+    margin: 25px 0 0 0;
+}
+
+.main-body p {
+    margin: 0;
+}
+
+.team-main {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.team-cont {
+    width: min-content;
+    margin: 0;
+    text-align: center;
+}
+
+
+.team-image {
+    border-radius: 40px;
+    height: 250px;
+    width: 250px;
+}
+
+.profile{
+    width: 300px;   
+    margin: 25px 0 0 0; 
+}
+
+.research1{
+    height: calc(100vh - 300px);
+}
+
+.carousel-button{
+    color: black;
+    background-color: black;
+}
+
+.carousel-site{
+    height: calc(100vh - 300px);
+}
+
+.publication-link::after{
+    content: attr(href);
+}
+
+.contact-wrap{
+    display: flex;
+    gap: 70px;
+}
+
+.main-footer{
+    background-color: var(--primary);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: 'Inter';
+}
+
+.main-footer a{
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* Slides */
+.mySlides {display: none}
+/* img {vertical-align: middle;}     */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Somnath maji's Research Group</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+            rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="body-top">
+            <div class="body-cont">
+            <div class="body-first">
+                <img src="IITHyderabad.png" class="IITHlogo">
+                <div class="headname">
+                    <div class="head1">Somnath Maji's</div>
+                    <div class="head2">Research Group</div>
+                </div>
+            </div>
+
+            <div class="body-second">
+                <p>Bio-Inspired Catalysis Lab</p>
+            </div>
+        </div>
+            <hr class="body-top-hr">
+        </div>
+
+        <!-- Navigation Bar-->
+        <div class="nav-bar">
+            <a class="nav-bar-button button-unselected" href="/">Home</a>
+            <a class="nav-bar-button button-selected" href="/research.html">Research</a>
+            <a class="nav-bar-button button-unselected" href="/aboutpi.html">About Pi</a>
+
+            <a class="nav-bar-button button-unselected" href="/team.html">Team</a>
+            <a class="nav-bar-button button-unselected" href="/publications.html">Publications</a>
+            <a class="nav-bar-button button-unselected" href="/teaching.html">Teaching</a>
+            <a class="nav-bar-button button-unselected" href="/contact.html">Contact</a>
+            <a class="nav-bar-button button-unselected" href="/alumni.html">Alumni</a>
+        </div>
+
+        <!-- Body -->
+            <div class="main-body">
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="images/research.png" style="width:100%">
+                      </div>
+
+                    <div class="mySlides fade">
+                      <img src="images/research/1.JPG" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="images/research/2.JPG" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="images/research/3.JPG" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="images/research/4.JPG" style="width:100%">
+                      </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+            </div>
+
+        </div>
+        <div class="main-footer">
+            © Somnath Maji 2022-2023. Website by <a href="https://adhitht.github.io">adhitht</a>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slides[slideIndex-1].style.display = "block";  
+            }
+            
+            </script>
+    </body>
+</html>
