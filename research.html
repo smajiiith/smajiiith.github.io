@@ -82,6 +82,13 @@
             let slideIndex = 1;
             showSlides(slideIndex);
             
+            function changeSlide(){
+              plusSlides(1)
+              setInterval(changeSlide, 4000)
+            }
+
+            changeSlide()
+
             function plusSlides(n) {
               showSlides(slideIndex += n);
             }
