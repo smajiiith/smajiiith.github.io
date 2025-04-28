@@ -320,13 +320,20 @@ margin: 70px 0 0 0;
     margin: 50px auto;
     display: block;
     position: relative;
-    width: 450px;
-    height: 600px;
+    width: 90%;
+    max-width: 300px;
+    height: 400px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     background: #fff;
   }
+  
+  @media (max-width: 480px) {
+    .carousel {
+      height: 400px;
+    }
+  }  
   
   .carousel img {
     width: 100%;
