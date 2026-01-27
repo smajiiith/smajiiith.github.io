@@ -107,7 +107,7 @@ body {
     display: flex;
     gap: 40px;
     width: 100%;
-    align-items: flex-start; /* 🔥 NO vertical centering */
+    align-items: flex-start; /* 🔥 critical */
 }
 
 /* LEFT */
@@ -153,11 +153,11 @@ body {
     background: #fff;
 }
 
-/* 🔥 SHOW FULL COVER PAGES */
+/* 🔥 FULL IMAGE VISIBLE (NO CROPPING) */
 .carousel img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* 🔥 IMPORTANT */
+    object-fit: contain;
     display: none;
     background: white;
 }
@@ -207,7 +207,6 @@ body {
 /* ================= MOBILE ================= */
 
 @media (max-width: 900px) {
-
     .homewrap {
         flex-direction: column;
     }
