@@ -212,6 +212,20 @@ display: block;
 object-fit: contain;
 border-radius: 6px;
 }
+/* ================= ALUMNI IMAGE FIX ================= */
+
+/* Any image inside alumni page content */
+.alumni img,
+.alumni-page img,
+.alumni-wrap img,
+.main-body img {
+    width: 100%;
+    max-width: 260px;   /* stops zoom */
+    height: auto;       /* keeps natural ratio */
+    object-fit: contain;
+    display: block;
+    margin: 20px auto;
+}
 
 /* ================= MOBILE ================= */
 
