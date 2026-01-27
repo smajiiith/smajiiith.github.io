@@ -203,6 +203,15 @@ body {
     color: white;
     text-decoration: underline;
 }
+/* ================= PROFILE IMAGE FIX ================= */
+.profile {
+width: 100%;
+max-width: 300px; /* stops zooming */
+height: auto; /* keeps natural ratio */
+display: block;
+object-fit: contain;
+border-radius: 6px;
+}
 
 /* ================= MOBILE ================= */
 
