@@ -8,8 +8,10 @@
 
 body {
     margin: 0;
+    font-family: 'Inter';
 }
 
+/* HEADER */
 .IITHlogo {
     height: 140px;
     aspect-ratio: 1;
@@ -19,19 +21,14 @@ body {
 .body-first {
     display: flex;
 }
-.body-second{
+
+.body-second {
     font-size: 48px;
-    font-family: 'Inter';
     font-weight: 700;
     margin: auto 40px auto 0;
 }
 
-/* .body-second p{
-    background: linear-gradient(var(--primary), white);
-
-} */
-
-.body-cont{
+.body-cont {
     display: flex;
     justify-content: space-between;
 }
@@ -42,16 +39,12 @@ body {
 
 .head1 {
     margin-bottom: -10px;
-    font-family: 'Inter', sans-serif;
-    letter-spacing: -1px;
-    font-style: normal;
     font-weight: 700;
     font-size: 46px;
     color: var(--primary);
 }
 
 .head2 {
-    font-family: 'Inter';
     font-style: italic;
     font-weight: 400;
     font-size: 46px;
@@ -60,11 +53,10 @@ body {
 
 .body-top-hr {
     width: 95%;
-    height: 0;
     border: 1px solid var(--secondary);
 }
 
-/* NavBar */
+/* NAV BAR */
 .nav-bar {
     margin: 10px 55px;
     display: flex;
@@ -74,20 +66,15 @@ body {
     margin: 15px;
     border-radius: 10px;
     text-transform: uppercase;
-    width: fit-content;
     padding: 12px 20px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    outline: none;
     border: none;
 }
 
 .button-selected {
     background-color: var(--secondary);
     color: white;
-
 }
 
 .button-unselected {
@@ -96,80 +83,33 @@ body {
     background-color: white;
 }
 
-.main-head2{
-    /* margin: 15px 0 0 75px; */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 58px;
-    color: var(--primary);
-}
-
-.index-content{
-margin: 70px 0 0 0;
-}
-
-.main-head {
-    margin: 15px 0 0 75px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 58px;
-    color: var(--primary);
-}
-
-.main-root {
-    display: flex;
-}
-
-.main-sidebar {
-    position: fixed;
-    top: 23vh;
-    right: 0;
-    width: 23vw;
-    flex-basis: 23%;
-}
-
-.sidebar {
-    background: var(--tertiary);
-    border-radius: 13px;
-    padding: 15px;
-    margin: 20px;
-    font-family: 'Inter';
-    font-size: 20px;
-}
-
-.sidebar p,
-.sidebar h3 {
-    margin: 0;
-    padding-left: 15px;
-}
-
-.main-marquee{
+/* MARQUEE */
+.main-marquee {
     background-color: rgba(255, 255, 0, 0.397);
-    font-family: 'Inter';
     font-size: 24px;
 }
 
+/* MAIN BODY */
 .main-body {
-    /* flex-basis: 70%; */
-    margin: 0px 0 0 105px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
+    margin: 0 0 0 105px;
     font-size: 24px;
     line-height: 29px;
     color: var(--primary);
     min-height: calc(100vh - 300px);
 }
 
+/* ===== HOME LAYOUT (FIXED) ===== */
 .homewrap {
     display: flex;
-    /* align-items: center; */
+    gap: 50px;
+    align-items: flex-start;
     line-height: 40px;
     font-size: 36px;
+}
+
+/* LEFT SIDE */
+.home-left {
+    flex: 1.1;
 }
 
 .homeimage {
@@ -177,201 +117,102 @@ margin: 70px 0 0 0;
     margin: 15px 0 0 0;
 }
 
-.main-body h3,
-.main-body img,
-.main-body p,
-.main-body ol {
-    padding: 0 0 0 15px;
+.main-head2 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 58px;
+    color: var(--primary);
 }
 
-.main-body h4{
-    margin: 25px 0 0 0;
+.index-content {
+    margin-top: 40px;
 }
 
-.main-body p {
-    margin: 0;
+/* RIGHT SIDE (BIGGER AREA) */
+.home-right {
+    flex: 1.5;
 }
 
-.team-main {
-    display: flex;
-    gap: 30px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-
-.team-cont {
-    width: min-content;
-    margin: 0;
-    text-align: center;
-}
-
-
-.team-image {
-    border-radius: 40px;
-    height: 250px;
-    width: 250px;
-}
-
-.profile{
-    width: 300px;   
-    margin: 25px 0 0 0; 
-}
-
-.research1{
-    height: calc(100vh - 300px);
-}
-
-.carousel-button{
-    color: black;
-    background-color: black;
-}
-
-.carousel-site{
-    height: calc(100vh - 300px);
-}
-
-.publication-link::after{
-    content: attr(href);
-}
-
-.contact-wrap{
-    display: flex;
-    gap: 70px;
-}
-
-.main-footer{
-    background-color: var(--primary);
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    font-family: 'Inter';
-}
-
-.main-footer a{
-    color: white;
-    text-decoration: underline;
-}
-
-
-/* Slides */
-.mySlides {display: none}
-/* img {vertical-align: middle;}     */
-
-.slideshow-container {
-    max-width: 1000px;
+/* ===== CAROUSEL (UPDATED SIZE) ===== */
+.carousel {
     position: relative;
-    margin: auto;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: black;
-    font-weight: bold;
-    font-size: 36px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
-
-
-  /* cover page section added by Manoj Kumar */
-  .carousel {
-    margin: 50px auto;
-    display: block;
-    position: relative;
-    width: 90%;
-    max-width: 300px;
-    height: 400px;
+    width: 100%;
+    max-width: 520px;
+    height: 520px;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     background: #fff;
-  }
-  
-  @media (max-width: 480px) {
-    .carousel {
-      height: 400px;
-    }
-  }  
-  
-  .carousel img {
+}
+
+.carousel img {
     width: 100%;
     height: 100%;
     display: none;
     object-fit: cover;
-  }
-  
-  .carousel img.active {
+}
+
+.carousel img.active {
     display: block;
-  }
-  
-  .buttons {
+}
+
+/* CAROUSEL BUTTONS */
+.buttons {
     position: absolute;
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 10px; /* Reduced padding */
-    box-sizing: border-box; /* Important: ensures padding doesn't overflow */
-    pointer-events: none; /* allow clicks to pass through */
-  }
-  
-  .buttons button {
-    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 12px;
+    pointer-events: none;
+}
+
+.buttons button {
+    background-color: rgba(0,0,0,0.5);
     border: none;
     color: white;
     padding: 10px;
     font-size: 24px;
     cursor: pointer;
     border-radius: 50%;
-    pointer-events: all; /* allow buttons themselves to receive clicks */
-    transition: background-color 0.3s;
-  }
-  
-  .buttons button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
+    pointer-events: all;
+}
+
+.buttons button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* FOOTER */
+.main-footer {
+    background-color: var(--primary);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.main-footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .main-body {
+        margin-left: 20px;
+    }
+
+    .homewrap {
+        flex-direction: column;
+    }
+
+    .homeimage {
+        width: 100%;
+    }
+
+    .carousel {
+        max-width: 100%;
+        height: 420px;
+    }
+}
