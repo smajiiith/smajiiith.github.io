@@ -71,6 +71,7 @@ body {
     font-size: 17px;
     text-transform: uppercase;
     border: none;
+    text-decoration: none;
 }
 
 .button-selected {
@@ -107,7 +108,7 @@ body {
     display: flex;
     gap: 40px;
     width: 100%;
-    align-items: flex-start; /* 🔥 critical */
+    align-items: flex-start;
 }
 
 /* LEFT */
@@ -153,11 +154,10 @@ body {
     background: #fff;
 }
 
-/* 🔥 FULL IMAGE VISIBLE (NO CROPPING) */
 .carousel img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: contain;   /* FULL cover pages visible */
     display: none;
     background: white;
 }
@@ -189,6 +189,46 @@ body {
     pointer-events: all;
 }
 
+/* ================= TEAM & ALUMNI ================= */
+
+.team-main {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.team-cont {
+    width: min-content;
+    text-align: center;
+}
+
+.team-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;   /* correct square crop */
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* ================= CONTACT PAGE ================= */
+
+.contact-wrap {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.profile {
+    width: 100%;
+    max-width: 300px;   /* faculty portrait size */
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+    display: block;
+}
+
 /* ================= FOOTER ================= */
 
 .main-footer {
@@ -203,33 +243,11 @@ body {
     color: white;
     text-decoration: underline;
 }
-/* ================= PROFILE IMAGE FIX ================= */
-.profile {
-width: 100%;
-max-width: 300px; /* stops zooming */
-height: auto; /* keeps natural ratio */
-display: block;
-object-fit: contain;
-border-radius: 6px;
-}
-/* ================= ALUMNI IMAGE FIX ================= */
-
-/* Any image inside alumni page content */
-.alumni img,
-.alumni-page img,
-.alumni-wrap img,
-.main-body img {
-    width: 100%;
-    max-width: 260px;   /* stops zoom */
-    height: auto;       /* keeps natural ratio */
-    object-fit: contain;
-    display: block;
-    margin: 20px auto;
-}
 
 /* ================= MOBILE ================= */
 
 @media (max-width: 900px) {
+
     .homewrap {
         flex-direction: column;
     }
@@ -241,5 +259,14 @@ border-radius: 6px;
 
     .homeimage {
         max-width: 100%;
+    }
+
+    .contact-wrap {
+        flex-direction: column;
+    }
+
+    .team-image {
+        width: 220px;
+        height: 220px;
     }
 }
