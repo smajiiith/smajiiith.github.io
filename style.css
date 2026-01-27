@@ -9,14 +9,14 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    overflow-x: hidden; /* 🔴 prevents horizontal overflow */
+    overflow-x: hidden;
 }
 
 /* ================= HEADER ================= */
 
 .IITHlogo {
-    height: 140px;
-    margin: 15px 40px;
+    height: 120px;
+    margin: 15px 35px;
 }
 
 .body-first {
@@ -24,9 +24,9 @@ body {
 }
 
 .body-second {
-    font-size: 42px;
+    font-size: 38px;
     font-weight: 700;
-    margin: auto 40px auto 0;
+    margin: auto 35px auto 0;
 }
 
 .body-cont {
@@ -36,18 +36,18 @@ body {
 }
 
 .headname {
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
 .head1 {
+    font-size: 40px;
     font-weight: 700;
-    font-size: 44px;
     color: var(--primary);
 }
 
 .head2 {
+    font-size: 40px;
     font-style: italic;
-    font-size: 44px;
     color: var(--primary);
 }
 
@@ -59,16 +59,16 @@ body {
 /* ================= NAV BAR ================= */
 
 .nav-bar {
-    margin: 10px 40px;
+    margin: 8px 35px;
     display: flex;
 }
 
 .nav-bar-button {
-    margin: 12px;
+    margin: 10px;
     border-radius: 10px;
     padding: 10px 18px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 17px;
     text-transform: uppercase;
     border: none;
 }
@@ -88,50 +88,54 @@ body {
 
 .main-marquee {
     background-color: rgba(255, 255, 0, 0.4);
-    font-size: 22px;
-    padding: 6px 0;
+    font-size: 20px;
+    padding: 4px 0;
 }
 
 /* ================= MAIN BODY ================= */
 
+/* IMPORTANT: viewport control */
 .main-body {
-    margin: 40px auto;
-    max-width: 1400px; /* 🔴 keeps everything in one frame */
-    padding: 0 40px;
-    color: var(--primary);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 35px;
+    height: calc(100vh - 320px); /* 🔥 KEY FIX */
+    display: flex;
+    align-items: center;
 }
 
-/* ================= HOME LAYOUT ================= */
+/* ================= HOME SECTION ================= */
 
 .homewrap {
     display: flex;
-    gap: 40px; /* 🔴 controlled gap */
-    align-items: flex-start;
+    gap: 35px;
+    width: 100%;
+    align-items: center;
 }
 
-/* LEFT SIDE */
+/* LEFT */
 .home-left {
     flex: 1;
 }
 
 .homeimage {
     width: 100%;
-    max-width: 420px; /* 🔴 reduced from 600px */
-    margin-bottom: 20px;
+    max-width: 380px;   /* 🔥 reduced */
+    height: auto;
 }
 
 .main-head2 {
-    font-size: 40px;
+    font-size: 34px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin: 12px 0;
 }
 
 .index-content {
-    font-size: 22px;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
-/* RIGHT SIDE */
+/* RIGHT */
 .home-right {
     flex: 1;
     display: flex;
@@ -142,12 +146,12 @@ body {
 
 .carousel {
     width: 100%;
-    max-width: 420px; /* 🔴 fits laptop screen */
-    height: 500px;
+    max-width: 380px;   /* 🔥 reduced */
+    height: 420px;      /* 🔥 reduced */
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
     background: #fff;
 }
 
@@ -170,7 +174,7 @@ body {
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
-    padding: 0 12px;
+    padding: 0 10px;
     pointer-events: none;
 }
 
@@ -178,7 +182,7 @@ body {
     background: rgba(0,0,0,0.6);
     color: white;
     border: none;
-    font-size: 22px;
+    font-size: 20px;
     padding: 8px 12px;
     border-radius: 50%;
     cursor: pointer;
@@ -191,7 +195,7 @@ body {
     background: var(--primary);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 18px;
     font-size: 22px;
 }
 
@@ -203,12 +207,19 @@ body {
 /* ================= MOBILE ================= */
 
 @media (max-width: 900px) {
+
+    .main-body {
+        height: auto;
+        align-items: flex-start;
+    }
+
     .homewrap {
         flex-direction: column;
     }
 
     .carousel {
-        height: 420px;
+        max-width: 100%;
+        height: 360px;
     }
 
     .homeimage {
