@@ -14,6 +14,7 @@
 
     </head>
     <body>
+        <!-- HEADER -->
         <div id="body-top">
             <div class="body-cont">
             <div class="body-first">
@@ -31,7 +32,7 @@
             <hr class="body-top-hr">
         </div>
 
-        <!-- Navigation Bar-->
+        <!-- Navigation -->
         <div class="nav-bar">
             <a class="nav-bar-button button-selected" href="/">Home</a>
             <a class="nav-bar-button button-unselected" href="/research.html">Research</a>
@@ -44,69 +45,60 @@
             <a class="nav-bar-button button-unselected" href="/alumni.html">Alumni</a>
         </div>
 
-        <!-- Body -->
-        <marquee class="main-marquee">Candidates with CSIR-JRF
-            are encouraged to apply with
-            their curriculum vitae</marquee>
-
+        <!-- MARQUEE -->
+        <marquee class="main-marquee">
+            Candidates with CSIR-JRF are encouraged to apply with their curriculum vitae 
+        </marquee>
+        
+        <!-- MAIN CONTENT -->
         <div class="main-body">
             <div class="homewrap">
-                <img class="homeimage" src="images/home.png" />
+                <!-- LEFT SIDE -->
+                <div class="home-left">
+                    <img class="homeimage" src="images/home.png">
 
-                <div>
+
                     <div class="main-head2">Research Interests</div>
                     <div class="index-content">
                         <p>
-                            Synthetic Coordination/Bio-Inorganic/Organometallic
-                            Chemistry.
-                            Small molecule activation/ Anti-Cancer Activity of
-                            Ruthenium
-                            (II) Arene Complexes/ Transition metal polypyridyl
-                            complexes for
-                            DNA binding/cleavage/anticancer activities /
-                            Designed
-                            Photoactive Transition Metal Nitrosyl for
-                            site-specific
-                            NO
-                            delivery /Metal catalyzed Water Splitting/ Carbon
-                            Dioxide
-                            Reduction/ Hydrogen Generation. Applications of
-                            molecular
-                            catalysts in functional devices to produce solar
-                            fuels.
+                            Synthetic Coordination/Bio-Inorganic/Organometallic Chemistry.
+                            Small molecule activation / Anti-Cancer Activity of Ruthenium (II)
+                            Arene Complexes / Transition metal polypyridyl complexes for DNA
+                            binding/cleavage/anticancer activities / Designed Photoactive
+                            Transition Metal Nitrosyl for site-specific NO delivery /
+                            Metal catalyzed Water Splitting / Carbon Dioxide Reduction /
+                            Hydrogen Generation. Applications of molecular catalysts in
+                            functional devices to produce solar fuels.
                         </p>
                     </div>
                 </div>
+               <!-- RIGHT SIDE (BIGGER IMAGE AREA) -->
+                <div class="home-right">
+                    <div class="carousel">
+                        <img src="images/cover_pages/Cover Page 5.jpg" class="active">
+                        <img src="images/cover_pages/Cover page 4.jpg">
+                        <img src="images/cover_pages/Cover page 3.jpg">
+                        <img src="images/cover_pages/Cover Page3.jpg">
+                        <img src="images/cover_pages/cover_page_1.jpg">
+                        <img src="images/cover_pages/cover_page_2.jpg">
+
+
+                        <div class="buttons">
+                            <button onclick="prevSlide()">❮</button>
+                            <button onclick="nextSlide()">❯</button>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
-
-        <!--Cover Page by Manoj Kumar-->
-
+        
         <hr style="width: 70%; margin: 30px auto; border: 1px solid #ccc;">
-
-        <div class="carousel">
-             <img src="images/cover_pages/Cover Page 5.jpg" class="active">
-             <img src="images/cover_pages/Cover page 4.jpg" class="active">
-             <img src="images/cover_pages/Cover page 3.jpg" class="active">
-             <img src="images/cover_pages/Cover Page3.jpg" class="active">
-             <img src="images/cover_pages/cover_page_1.jpg" class="active">
-             <img src="images/cover_pages/cover_page_2.jpg" class="active">
-            
-          
-            <div class="buttons">
-              <button onclick="prevSlide()">❮</button>
-              <button onclick="nextSlide()">❯</button>
-            </div>
-        </div>
-
-        <hr style="width: 70%; margin: 30px auto; border: 1px solid #ccc;">
-
-        <script src="script.js"></script>
-            
-
+        <!-- FOOTER -->
         <div class="main-footer">
             © Somnath Maji 2022-2027. Website by <a href="https://adhitht.github.io">adhitht</a>
         </div>
-
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
