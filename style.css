@@ -139,13 +139,13 @@ body {
     flex: 1.15;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 
 .carousel-heading {
     font-size: 26px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     margin-bottom: 14px;
     color: var(--primary);
 }
@@ -154,8 +154,8 @@ body {
 
 .carousel {
     width: 100%;
-    max-width: 480px;
-    height: 620px;
+    max-width: 560px;
+    height: 700px;
     position: relative;
     overflow: hidden;
     border-radius: 14px;
@@ -167,9 +167,9 @@ body {
 .carousel img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top;
     display: none;
-    background: white;
 }
 
 .carousel img.active {
